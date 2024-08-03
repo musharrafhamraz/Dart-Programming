@@ -178,20 +178,53 @@ void main() {
        each raised to the power of the number of digits).
   */
 
-  int number = 152;
-  int fNumber = 0;
+  // int number = 152;
+  // int fNumber = 0;
 
-  String numberS = number.toString();
+  // String numberS = number.toString();
 
-  List<int> numberL = numberS.split("").map(int.parse).toList();
+  // List<int> numberL = numberS.split("").map(int.parse).toList();
 
-  for (int i = 0; i < numberL.length; i++) {
-    fNumber += pow(numberL[i], numberL.length) as int;
-  }
+  // for (int i = 0; i < numberL.length; i++) {
+  //   fNumber += pow(numberL[i], numberL.length) as int;
+  // }
 
-  if (number != fNumber) {
-    print("the number is not armstrong.");
-  } else {
-    print("the number is armstrong.");
-  }
+  // if (number != fNumber) {
+  //   print("the number is not armstrong.");
+  // } else {
+  //   print("the number is armstrong.");
+  // }
+
+  /*
+  Q.   Write a function to check if two strings are anagrams of each other.
+  */
+
+  // bool checkAnagram(String word1, String word2) {
+  //   // split to convert string to list
+  //   List<String> word1L = word1.split("");
+  //   List<String> word2L = word2.split("");
+
+  //   // if length of both word is not equal ultimately not anagram
+  //   if (word2L.length != word1L.length) {
+  //     return false;
+  //   }
+
+  //   // sort the list in ascending order [a,b,c,d,......]
+  //   word2L.sort();
+  //   word1L.sort();
+
+  //   // loop through both lists to check whether every element in the list equal to another or not.
+  //   for (int i = 0; i < word1L.length; i++) {
+  //     if (word2L[i] != word1L[i]) {
+  //       return false;
+  //     }
+  //   }
+  //   return true;
+  // }
+
+  // print(checkAnagram("hello", "lehlo"));
+
+  /*
+  Q.   Write 
+  */
 }
