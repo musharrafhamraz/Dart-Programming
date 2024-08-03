@@ -164,12 +164,34 @@ void main() {
   Q.   Write a program that converts a temperature from Celsius to Fahrenheit and vice versa.
   */
 
-  int celcs = 24;
-  int ferenh = 89;
+  // int celcs = 24;
+  // int ferenh = 89;
 
-  double covToFe = celcs * 2 + 30;
-  double covToCe = (ferenh - 30) / 2;
+  // double covToFe = celcs * 2 + 30;
+  // double covToCe = (ferenh - 30) / 2;
 
-  print("The celcius to ferenheit is $covToFe");
-  print("The ferenheit to celcius is $covToCe");
+  // print("The celcius to ferenheit is $covToFe");
+  // print("The ferenheit to celcius is $covToCe");
+
+  /*
+  Q.   Create a function to check whether a number is an Armstrong number (a number equal to the sum of its digits 
+       each raised to the power of the number of digits).
+  */
+
+  int number = 152;
+  int fNumber = 0;
+
+  String numberS = number.toString();
+
+  List<int> numberL = numberS.split("").map(int.parse).toList();
+
+  for (int i = 0; i < numberL.length; i++) {
+    fNumber += pow(numberL[i], numberL.length) as int;
+  }
+
+  if (number != fNumber) {
+    print("the number is not armstrong.");
+  } else {
+    print("the number is armstrong.");
+  }
 }
