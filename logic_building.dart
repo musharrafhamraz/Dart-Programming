@@ -225,6 +225,19 @@ void main() {
   // print(checkAnagram("hello", "lehlo"));
 
   /*
-  Q.   Write 
+  Q.   Write a program that finds the largest and smallest numbers in a List.
+  */
+
+  // List<int> numbers = [6, 5, 2, 6, 9, 2, 7, 4];
+
+  // numbers.sort();
+  // int n = numbers.length - 1;
+
+  // print("The smallest number is ${numbers[0]}");
+  // print("The smallest number is ${numbers[n]}");
+
+  /*
+  Q.   Implement a simple number guessing game where the computer randomly selects a number, 
+        and the user has to guess it.
   */
 }
