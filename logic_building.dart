@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:math';
 
 void main() {
@@ -240,4 +241,24 @@ void main() {
   Q.   Implement a simple number guessing game where the computer randomly selects a number, 
         and the user has to guess it.
   */
+
+  Random random = new Random();
+  int number = random.nextInt(100) + 1;
+
+  int? guessNumber;
+
+  while (guessNumber != number) {
+    print("Enter a Number: ");
+    guessNumber = int.parse(stdin.readLineSync()!);
+
+    if (guessNumber == number) {
+      print("You Won.");
+    } else if (guessNumber > number) {
+      print("The number entered is high.");
+    } else if (guessNumber < number) {
+      print("The number entered is low.");
+    } else {
+      print("Wrong Guess.");
+    }
+  }
 }
