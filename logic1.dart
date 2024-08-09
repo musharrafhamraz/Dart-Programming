@@ -1,4 +1,4 @@
-import 'dart:io';
+// import 'dart:io';
 
 void main() {
   /*
@@ -50,22 +50,59 @@ void main() {
 
   // print("The $n th Fibonaci Sequence is $fib");
 
-  int fiboSeq(int n) {
-    if (n <= 0) return 0;
-    if (n == 1) return 1;
+  // int fiboSeq(int n) {
+  //   if (n <= 0) return 0;
+  //   if (n == 1) return 1;
 
-    int a = 0;
-    int b = 1;
-    int fib = 1;
+  //   int a = 0;
+  //   int b = 1;
+  //   int fib = 1;
 
-    for (int i = 2; i <= n; i++) {
-      fib = a + b;
-      a = b;
-      b = fib;
-    }
-    print("The $n-th fibo seq is $fib");
-    return fib;
-  }
+  //   for (int i = 2; i <= n; i++) {
+  //     fib = a + b;
+  //     a = b;
+  //     b = fib;
+  //   }
+  //   print("The $n-th fibo seq is $fib");
+  //   return fib;
+  // }
 
-  fiboSeq(10);
+  // fiboSeq(10);
+
+  /*
+  Q. Calculate the sum of even and odd numbers in a given range.
+  */
+
+  // int evenSum = 0;
+  // int oddSum = 0;
+
+  // for (int i = 0; i <= 100; i++) {
+  //   if (i % 2 == 0) {
+  //     evenSum += i;
+  //   } else {
+  //     oddSum += i;
+  //   }
+  // }
+
+  // print("The Sum of all Even numbers from 0 to 100 is $evenSum");
+  // print("The Sum of all Odd numbers from 0 to 100 is $oddSum");
+
+  /*
+  Q. Write a program to find all unique elements in a List.
+  */
+
+  // List<int> lst = [1, 3, 7, 2, 4, 1, 3, 2, 5, 7, 9, 3, 4, 6];
+  // List<int> lstNew = [];
+
+  // for (int i = 0; i <= lst.length - 1; i++) {
+  //   if (!lstNew.contains(lst[i])) {
+  //     lstNew.add(lst[i]);
+  //   }
+  // }
+
+  // print(lstNew);
+
+  /*
+  Q. Write a function that converts a decimal number to binary.
+  */
 }
