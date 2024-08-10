@@ -105,4 +105,22 @@ void main() {
   /*
   Q. Write a function that converts a decimal number to binary.
   */
+
+  String decimalToBinary(number) {
+    if (number == 0) {
+      return '0';
+    }
+    String binary = '';
+
+    while (number > 0) {
+      int remainder = number % 2;
+      binary = remainder.toString() + binary;
+      number = number ~/ 2;
+    }
+
+    return binary;
+  }
+
+  int number = 64;
+  print(decimalToBinary(number));
 }
