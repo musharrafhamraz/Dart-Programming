@@ -106,21 +106,71 @@ void main() {
   Q. Write a function that converts a decimal number to binary.
   */
 
-  String decimalToBinary(number) {
-    if (number == 0) {
-      return '0';
-    }
-    String binary = '';
+  // String decimalToBinary(number) {
+  //   if (number == 0) {
+  //     return '0';
+  //   }
+  //   String binary = '';
 
-    while (number > 0) {
-      int remainder = number % 2;
-      binary = remainder.toString() + binary;
-      number = number ~/ 2;
-    }
+  //   while (number > 0) {
+  //     int remainder = number % 2;
+  //     binary = remainder.toString() + binary;
+  //     number = number ~/ 2;
+  //   }
 
-    return binary;
+  //   return binary;
+  // }
+
+  // int number = 64;
+  // print(decimalToBinary(number));
+
+  /*
+  Q. Write a function to find the second largest number in a List.
+  */
+
+  // List<int> lst = [1, 3, 6, 2, 4, 6, 8, 7, 4, 2];
+
+  // lst.sort();
+  // int secondLargestNumber = lst[lst.length - 2];
+
+  // print('The second largest number in the list is $secondLargestNumber');
+
+  /*
+  Q. Implement a function to remove duplicate elements from a List.
+  */
+
+  // List<int> lst = [1, 3, 6, 2, 4, 6, 8, 7, 4, 2];
+
+  // List<int> duplicateFreeLst = [];
+
+  // for (int i = 0; i < lst.length; i++) {
+  //   if (!duplicateFreeLst.contains(lst[i])) {
+  //     duplicateFreeLst.add(lst[i]);
+  //   }
+  // }
+  // duplicateFreeLst.sort();
+  // print(duplicateFreeLst);
+
+  /*
+  Q.  Implement a function that compresses a string using the counts of repeated 
+      characters (e.g., "aabcccccaaa" becomes "a2b1c5a3").
+  */
+
+  String seq = 'aabcccccaaa';
+
+  List<String> seqLst = seq.split("");
+
+  String compressedString = '';
+  int count = 1;
+
+  for (int i = 1; i < seqLst.length - 1; i++) {
+    if (seqLst[i] == seqLst[i + 1]) {
+      count += 1;
+    } else {
+      compressedString += seqLst[i] + count.toString();
+      count = 1;
+    }
   }
 
-  int number = 64;
-  print(decimalToBinary(number));
+  print(compressedString);
 }
