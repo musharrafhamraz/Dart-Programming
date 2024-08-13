@@ -156,23 +156,23 @@ void main() {
       characters (e.g., "aabcccccaaa" becomes "a2b1c5a3").
   */
 
-  // String seq = 'aabcccccaaa';
+  String seq = 'aabcccccaaa';
 
-  // List<String> seqLst = seq.split("");
+  List<String> seqLst = seq.split("");
 
-  // String compressedString = '';
-  // int count = 1;
+  String compressedString = '';
+  int count = 1;
 
-  // for (int i = 1; i < seqLst.length - 1; i++) {
-  //   if (seqLst[i] == seqLst[i + 1]) {
-  //     count += 1;
-  //   } else {
-  //     compressedString += seqLst[i] + count.toString();
-  //     count = 1;
-  //   }
-  // }
+  for (int i = 1; i < seqLst.length - 1; i++) {
+    if (seqLst[i] == seqLst[i + 1]) {
+      count += 1;
+    } else {
+      compressedString += seqLst[i] + count.toString();
+      count = 1;
+    }
+  }
 
-  // print(compressedString);
+  print(compressedString);
 
   /*
   Q.  Implement a function that compresses a string using the counts of repeated 
