@@ -80,4 +80,21 @@ void main() {
   }
 
   print(evenOddChecker(number: 33));
+
+  /*
+  Assignment 24
+  Write a function that....
+  */
+
+  /*
+
+    Concepts to cover in coming days...
+
+    OOPs
+    1. Inheritance
+      i. isA relationship
+      ii. hasA relationship
+    2. Polymorphism
+
+  */
 }
