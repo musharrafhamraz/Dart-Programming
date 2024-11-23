@@ -9,7 +9,7 @@ void main() {
   * * *
   * * * *
   * * * * *
-  */
+  // */
 
   // for (int i = 1; i < 5 + 1; i++) {
   //   print("* " * i);
@@ -32,7 +32,7 @@ void main() {
   //   return "The product of $number1 and $number2 is ${rProduct.toString()}";
   // }
 
-  // function calling
+  // // function calling
   // product();
 
   /*
@@ -40,36 +40,36 @@ void main() {
   Write a function that recieves a number and prints its factorial.
   */
 
-  String facto(int number) {
-    int fact = 1;
+  // String facto(int number) {
+  //   int fact = 1;
 
-    for (int i = 1; i <= number; i++) {
-      fact *= i;
-    }
-    return "The factorial of $number is $fact";
-  }
+  //   for (int i = 1; i <= number; i++) {
+  //     fact *= i;
+  //   }
+  //   return "The factorial of $number is $fact";
+  // }
 
-  print(facto(5));
+  // print(facto(5));
 
-  /*
-  Assignment 23
-  Write a function that recieves 2 number and prints the largest number.
-  */
+  // /*
+  // Assignment 23
+  // Write a function that recieves 2 number and prints the largest number.
+  // */
 
-  int largestNumberFinder(int num1, int num2) {
-    if (num1 > num2) {
-      return num1;
-    } else {
-      return num2;
-    }
-  }
+  // int largestNumberFinder(int num1, int num2) {
+  //   if (num1 > num2) {
+  //     return num1;
+  //   } else {
+  //     return num2;
+  //   }
+  // }
 
-  print(largestNumberFinder(10, 20));
+  // print(largestNumberFinder(10, 20));
 
-  /*
-  Assignment 24
-  Write a function that recieves a number and determine whether it is even or odd.
-  */
+  // /*
+  // Assignment 24
+  // Write a function that recieves a number and determine whether it is even or odd.
+  // */
 
   String evenOddChecker({required int number}) {
     if (number % 2 == 0) {
