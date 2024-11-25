@@ -156,26 +156,37 @@ void main() {
       characters (e.g., "aabcccccaaa" becomes "a2b1c5a3").
   */
 
-  String seq = 'aabcccccaaa';
+  // String seq = 'aabcccccaaa';
 
-  List<String> seqLst = seq.split("");
+  // List<String> seqLst = seq.split("");
 
-  String compressedString = '';
-  int count = 1;
+  // String compressedString = '';
+  // int count = 1;
 
-  for (int i = 1; i < seqLst.length - 1; i++) {
-    if (seqLst[i] == seqLst[i + 1]) {
-      count += 1;
-    } else {
-      compressedString += seqLst[i] + count.toString();
-      count = 1;
+  // for (int i = 1; i < seqLst.length - 1; i++) {
+  //   if (seqLst[i] == seqLst[i + 1]) {
+  //     count += 1;
+  //   } else {
+  //     compressedString += seqLst[i] + count.toString();
+  //     count = 1;
+  //   }
+  // }
+
+  // print(compressedString);
+
+  /*
+  Q.  Write a program to find all unique elements in an array. 
+  */
+
+  List<int> lst = [1, 3, 2, 4, 2, 23, 3, 2, 3, 2, 23, 6];
+
+  List<int> uniqueNumbers = [];
+
+  for (int i = 0; i < lst.length - 1; i++) {
+    if (!uniqueNumbers.contains(lst[i])) {
+      uniqueNumbers.add(lst[i]);
     }
   }
 
-  print(compressedString);
-
-  /*
-  Q.  Implement a function that compresses a string using the counts of repeated 
-      characters (e.g., "aabcccccaaa" becomes "a2b1c5a3").
-  */
+  print(uniqueNumbers);
 }
