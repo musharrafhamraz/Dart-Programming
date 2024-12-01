@@ -95,13 +95,46 @@ void main() {
   5. return the reversed number.
   */
 
-  int number = 456789;
-  String sNumber = number.toString();
-  List<String> numbers = sNumber.split('');
+  int reverseNumber(int number) {
+    String sNumber = number.toString();
+    List<String> numbers = sNumber.split('');
 
-  String revseredNumber = numbers.reversed.join();
+    String revseredNumber = numbers.reversed.join();
 
-  int reverseNumberIntger = int.parse(revseredNumber);
+    int reverseNumberIntger = int.parse(revseredNumber);
 
-  print('The reversed number for $number is $reverseNumberIntger');
+    return reverseNumberIntger;
+  }
+
+  // reverseNumber(345678);
+  print(reverseNumber(23456789));
+
+  /*
+  Q. Write a program to find the missing number in an array of consecutive integers. 
+
+  STEPS:
+  1. initialize an array.
+  2. traverse through array.
+  3. find the missing values.
+  4. print missing values
+  */
+
+  List<int> lstNum = [
+    1,
+    2,
+    3,
+    5,
+    7,
+    8,
+  ];
+  int hiddenNums = 0;
+
+  for (int i = 0; i <= lstNum.length - 1; i++) {
+    if (lst[i] == lst[i + 1] - 1) {
+    } else {
+      hiddenNums++;
+    }
+  }
+
+  print('Hidden Numbers Count is $hiddenNums');
 }
